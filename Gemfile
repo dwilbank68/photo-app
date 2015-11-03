@@ -4,6 +4,11 @@ group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+  gem 'quiet_assets'
+  gem "better_errors"
+  gem "binding_of_caller" #if you use better_errors
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :production do
@@ -11,8 +16,13 @@ group :production do
   gem 'rails_12factor'
 end
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
+
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+
+
 # Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
